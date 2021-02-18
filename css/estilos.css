@@ -1,0 +1,203 @@
+/*Reset do CSS*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Code Pro', monospace;
+  color:rgb(238, 149, 46);
+
+}
+
+.a :hover{
+  text-decoration: underline;
+  text-emphasis: circle;
+}
+
+body {
+  background-attachment: fixed;
+  background-position:center;
+  background-image: url('../img/amazon-selling-1000-pieces-white-blank-puzzle-5ea7e4dbc77d2-png__700.jpg');
+  background-size: auto 150vh;
+}
+
+
+
+@media (min-width: 400px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 22px;
+  }
+}
+
+header {
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.menu{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  background-color:black;
+  
+}
+.menu a:hover,
+.menu a:hover{
+  background-color: gray;
+  color:black;
+  transition:background-color 2s, color 2s;
+}
+
+.site-title {
+  color: whitesmoke;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 2em;
+  text-align: center;
+  line-height: 1.5em;
+
+}
+
+.site-subtitle {
+  color: silver;
+  font-family: 'Source Code Pro', monospace;
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center; 
+  font-size: 1.5em;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
+  object-fit: cover;
+  transition:transform 400ms;
+}
+
+.img-portfolio:hover,
+.img-portfolio:active{
+  transform:scale(1.2)
+}
+
+.areas,
+.contato,
+.sobre{
+padding:2em;
+}
+
+.areas h2,
+.contato h2,
+.sobre h2{
+margin-bottom: 1.5em;
+font-size: 2em;
+text-align: center;
+}
+
+.sobre p{
+text-indent: 2em;
+text-align: justify;
+font-size: 1.5em;
+margin-bottom: 1em;
+margin-top: 1em ;
+
+}
+
+.areas .grid{
+  display:grid;
+  gap: 1em;
+  grid-template-columns: 240px;
+  justify-content: center;
+}
+
+.areas figure {
+  text-align: center;
+}
+
+@media(min-width: 560px) {
+  .areas .grid{
+    grid-template-columns: repeat(2,260px);
+    justify-content: center;
+    }
+}
+
+@media(min-width: 840px) {
+  .areas .grid{
+  grid-template-columns: repeat(3,260px);
+  justify-content: center;
+  }
+}
+
+@media(min-width: 1000px) {
+  .areas .grid{
+  grid-template-columns: repeat(4,260px);
+  justify-content: center;
+  }
+}
+
+.contato .grid{
+  display:grid;
+  justify-content:center;
+  align-items: center;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+@media(min-width: 400px) {
+  .contato .grid{
+  grid-template-columns: repeat(2,100px);
+  justify-content: center;
+  }
+}
+
+@media(min-width: 600px) {
+  .contato .grid{
+  grid-template-columns: repeat(2,100px);
+  justify-content: center;
+  }
+}
+.icons {
+  padding: 1em;
+  opacity: 0.6;
+  transition: transform 400ms;
+}
+
+.icons:hover,
+.icons:active{
+  opacity: 1;
+  transform: scale(1.4);
+}
+
+.credits{
+  font-size: .8em;
+  text-align: center;
+  color: gray;
+  opacity: 1;
+  width: 100%;
+  height: 100%;
+}
